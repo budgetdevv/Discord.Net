@@ -113,7 +113,7 @@ namespace Discord.WebSocket
         private readonly object _downloadLock = new object();
         private readonly object _ownerLock = new object();
 
-        private ulong _ownerId;
+        public ulong _ownerId;
 
         internal SocketThreadChannel(DiscordSocketClient discord, SocketGuild guild, ulong id, SocketGuildChannel parent,
             DateTimeOffset? createdAt)
